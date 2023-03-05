@@ -30,6 +30,8 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
+      - name: Set execute permission on script
+        run: chmod +x assignment10/run.sh
       - name: Run the script inside assignment 10
         env:
           gcloud_token: ${{ secrets.AUTH }}
