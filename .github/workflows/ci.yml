@@ -34,6 +34,6 @@ jobs:
         run: chmod +x assignment10/run.sh
       - name: Run the script inside assignment 10
         env:
-          gcloud_token: ${{ secrets.AUT }}
+          gcloud_token: ${{ secrets.CLOUD }}
         run: |
           assignment10/run.sh  $gcloud_token
