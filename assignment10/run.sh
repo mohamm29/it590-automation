@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-echo $1 > token
-gcloud compute instances create web5 --project=mfa-project-374417 --zone=us-central1-a --machine-type=e2-medium  --network-interface=network=mycustvpc,subnet=uscent --tags=web-server --access-token-file=token
+echo $1 > access
+gcloud compute instances create newinstance --project=$2 --zone=us-central1-a --machine-type=e2-medium  --network-interface=network=mycustvpc,subnet=uscent --access-token-file=access
